@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>AlmaYan</title>
+<meta name="theme-color" content="#3811D4">
+<div id="TabernaculoEbenezer" style="width:100%;height:100%;position:absolute;left:0px;top:0px;z-index:300;overflow:hidden;display:block">CARGANDO RADIO ONLINE</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/lunaradio-sincors.js"></script>
+</head>
+<body>
+<script>
+  $("#TabernaculoEbenezer").lunaradio({
+  userinterface: "big",
+  backgroundcolor: "linear-gradient(135deg, rgba(0, 0, 0, 0.3) 100%, rgba(255, 182, 0, 0.3) 0%)",
+  fontcolor: "#ffffff",
+  hightlightcolor: "#FFC300",
+  fontname: "Righteous",
+  googlefont: "Righteous&display=swap", 
+  fontratio: "0.2",
+  radioname: "Alma Yan Radio", //nombre de radio
+  scroll: "true",
+  coverimage: "https://github.com/AlmaYan/radio/blob/main/logoT.png?raw=true", //link o ruta de logo radio
+  onlycoverimage: "true", //true para mostrar solo logo radio
+  coverstyle: "animated",
+  usevisualizer: "real",
+  visualizertype: "8",
+  metadatatechnic: "corsproxy",
+  ownmetadataurl: "",
+  usestreamcorsproxy: "false", //true o false
+  corsproxy: "https://evsportugal.herokuapp.com/?q=", 
+  streamurl: "http://stream.zeno.fm/9nzrpcp9kf9uv",
+  streamtype: "radiozeno", //shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
+  icecastmountpoint: "/source",
+  shoutcastpath: "/stream",
+  shoutcastid: "1",
+  streamsuffix: "",
+  radionomyid: "",
+  radionomyapikey: "",
+  radiozenoid: "9nzrpcp9kf9uv",
+  radiojarid: "",
+  radiocoid: "",
+  itunestoken: "1000lIPN",
+  metadatainterval: "10000",
+  volume: "100",
+  debug: "false",
+  
+  });
+</script>
+</body>
+</html>	
