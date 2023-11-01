@@ -1,0 +1,249 @@
+@import url("reset.css");
+@import url("modal.css");
+
+
+#NetycoPlayer{
+display:block;
+width:200px;
+height:200px;
+padding:0px;
+background-size: cover;
+background-repeat:no-repeat;
+background-color:#060;
+border-radius: 50%;
+}
+
+
+#brand{
+	width: 200px;
+	text-align:center;
+}
+
+
+
+#NetycoPlayer .titulo{
+	position: absolute;
+	left: 25px;
+	top: 24px;
+	text-align: center;
+	width: 150px;
+	display: block;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 2px;
+	border-left-width: 0px;
+	border-bottom-style: dashed;
+	font-size: 22px;
+	font-weight: bold;
+	text-shadow: 0 3px 4px #000000, 0px -2px 1px #fff;
+}
+
+	
+#NetycoPlayer .cancion{
+	display: block;
+	width: 172px;
+	position: absolute;
+	left: 15px;
+	top: 76px;
+	font-size: 13px;
+	text-align: left
+	text-shadow: 0 3px 4px #000000, 0px -2px 1px #fff;
+}
+	
+
+
+#NetycoPlayer #btnShare{
+	white-space: nowrap;
+	display:block;
+	position: absolute;
+	left: 56px;
+	top: 92px;
+	color: #222222;
+	font-size: 13px;
+	border: none;
+	text-decoration: none;
+	text-align:center;
+	padding:6px 10px 6px 10px;
+	margin: 5px 0px 0px 5px;
+	cursor: pointer;
+	border: 2px solid #555555;
+	border-radius: 12px;
+	vertical-align:middle;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	background-color: #FFFEF9;
+	}
+
+	
+
+#NetycoPlayer #btnShare:hover{
+	background-color: #e7e7e7; color: black;
+	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+	
+	
+
+
+#NetycoPlayer .controles{
+display: block;
+position: relative;
+height: 112px;
+z-index: 95
+}
+
+
+
+
+
+#NetycoPlayer .time{
+	text-align: center;
+	display: block;
+	width: 96px;
+	height: 16px;
+	position: absolute;
+	left: 51px;
+	top: 134px;
+	font-size: 12px;
+	}
+
+
+#NetycoPlayer .bootom_bar{
+	position: absolute;
+	left: 477px;
+	bottom: 42px;
+	display: block;
+	height: 30px;
+	width: 355px;
+	background-color: #FF6633
+}
+	
+
+
+#NetycoPlayer .buttons{	/*Posiciona PLAY y STOP */
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: -7px;
+	top: 63px;
+	color: #000;
+	font-size: 12px;
+	z-index: 7777;
+}
+
+
+
+#NetycoPlayer .volume{
+	display: block;
+	float: left;
+	width: 120px;
+	position: absolute;
+	top: 158px;
+	color: #000;
+	font-size: 1px;
+	margin: auto;
+	left: 44px;
+	}
+	
+#NetycoPlayer input[type=range]{
+
+   -webkit-appearance: none;
+    width: 80%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+	vertical-align:middle;
+	margin-bottom:14px;
+	/*
+	transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+	*/
+	}
+
+/*Adicionales para el estilo*/
+#NetycoPlayer input[type=range]:hover {
+    opacity: 1;
+}
+
+#NetycoPlayer input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 19px;
+    border: 0;
+    background: url('https://cdn.netyco.com/radio-x-internet/v2/img/contrasticon.png');
+    cursor: pointer;
+}
+
+#NetycoPlayer input[type=range]::-moz-range-thumb {
+    width: 18px;
+    height: 19px;
+    border: 0;
+    background: url('https://cdn.netyco.com/radio-x-internet/v2/img/contrasticon.png');
+    cursor: pointer;
+}
+
+
+
+
+#NetycoPlayer .buttons-play {
+	display: block;
+	transform-origin:center;
+	height:60px;
+
+	-webkit-transition:all .9s ease; /* Safari y Chrome */
+-moz-transition:all .9s ease; /* Firefox */
+-o-transition:all .9s ease; /* IE 9 */
+-ms-transition:all .9s ease; /* Opera */
+	
+	}
+#NetycoPlayer .buttons-play:hover {
+-webkit-transform:scale(1.25);
+-moz-transform:scale(1.25);
+-ms-transform:scale(1.25);
+-o-transform:scale(1.25);
+transform:scale(1.25);
+
+}
+
+
+	
+#NetycoPlayer .buttons-stop {
+	display: block;
+	height:60px;
+	transform-origin:center;
+
+-webkit-transition:all .9s ease; /* Safari y Chrome */
+-moz-transition:all .9s ease; /* Firefox */
+-o-transition:all .9s ease; /* IE 9 */
+-ms-transition:all .9s ease; /* Opera */
+	}
+
+
+#NetycoPlayer .buttons-stop:hover{
+-webkit-transform:scale(1.25);
+-moz-transform:scale(1.25);
+-ms-transform:scale(1.25);
+-o-transform:scale(1.25);
+transform:scale(1.25);
+}
+
+#NetycoPlayer .size{
+      transform:scale(1);
+  -webkit-transform:scale(1);
+ 	transform-origin:center;
+  }
+
+#NetycoPlayer  .ocultar{
+	visibility: hidden;
+	z-index:0;
+}
+#NetycoPlayer  .mostrar{
+	visibility:visible;
+	z-index:9999;
+}
